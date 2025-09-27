@@ -1,50 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Videographer</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anass YUNI — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Anass Yuni - Videographer / Director / Editor</h1>
-    <nav>
-      <a href="index.html">Videos</a>
-      <a href="thanks.html">Thanks</a>
-      <a href="free.html">More</a>
+  <header class="topbar">
+    <div class="brand">
+      <a href="index.html">ANASS <span>YUNI</span></a>
+      <p class="tag">Director • Videographer • Editor</p>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="active">WORK</a>
+      <a href="thanks.html">CLIENTS</a>
+      <a href="free.html">RESERVE</a>
     </nav>
   </header>
 
-  <main class="videos">
-    <section class="video-card" data-src="videos/video1.mp4">
-      <div class="video-container">
-        <video preload="none" muted></video>
-        <div class="video-info">
-          <h2>Title 1</h2>
-          <p>A short description about this video project. It highlights the story and style used.</p>
-        </div>
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <h1 class="hero-title">Visual Direction that breathes</h1>
+        <p class="hero-sub">Cinematic storytelling — crafted with intention, shot for light and edited for emotion.</p>
       </div>
     </section>
-    <section class="video-card" data-src="videos/video2.mp4">
-      <div class="video-container">
-        <video preload="none" muted></video>
-        <div class="video-info">
-          <h2>Title 2</h2>
-          <p>Exploring creative direction and storytelling through this unique short video piece.</p>
+
+    <section class="gallery" id="gallery">
+      <!-- Each card has data-src for lazy load, poster image, title, and 20-word description -->
+      
+      <article class="card" data-src="videos/video1.mp4">
+        <div class="media">
+          <video playsinline preload="none" poster="assets/poster1.svg"></video>
+          <button class="play">▶</button>
         </div>
-      </div>
-    </section>
-    <section class="video-card" data-src="videos/video3.mp4">
-      <div class="video-container">
-        <video preload="none" muted></video>
-        <div class="video-info">
-          <h2>Title 3</h2>
-          <p>A cinematic look into a journey of passion and art, directed with emotion and care.</p>
+        <div class="meta">
+          <h3>Tides of Copper</h3>
+          <p>Coastal artisans observed in slow motion, light shaping time and hands narrating an intimate, tactile cinematic portrait of labor.</p>
         </div>
-      </div>
+      </article>
+
+      <article class="card" data-src="videos/video2.mp4">
+        <div class="media">
+          <video playsinline preload="none" poster="assets/poster2.svg"></video>
+          <button class="play">▶</button>
+        </div>
+        <div class="meta">
+          <h3>Walnut Reverie</h3>
+          <p>Close-up woodworking sequences reveal craft, grain, and patience; a short film celebrating material honesty and the rhythm of making.</p>
+        </div>
+      </article>
+
+      <article class="card" data-src="videos/video3.mp4">
+        <div class="media">
+          <video playsinline preload="none" poster="assets/poster3.svg"></video>
+          <button class="play">▶</button>
+        </div>
+        <div class="meta">
+          <h3>City Noise Ballet</h3>
+          <p>An urban montage of motion and tempo; faces and transit fold together into a dynamic choreography of sound and color.</p>
+        </div>
+      </article>
+
     </section>
   </main>
+
+  <footer class="footer">
+    <div>© Anass YUNI — Director / Videographer / Editor</div>
+    <div class="links">
+      <a href="#">IG</a>
+      <a href="mailto:hello@example.com">Email</a>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
