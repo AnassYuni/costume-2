@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: linear-gradient(135deg, #000, #111, #222);
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  padding: 2em;
+  border-bottom: 2px solid orange;
+}
+
+nav a {
+  color: orange;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+.videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+  padding: 2em;
+}
+
+.video-card {
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 1em;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.video-card:hover {
+  transform: scale(1.03);
+}
+
+.video-container video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.video-info {
+  margin-top: 1em;
+}
